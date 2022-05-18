@@ -27,12 +27,33 @@ namespace InkapsArvPoly
         public string FirstName
         {
             get { return _firstName;  }
-            set{ _firstName = value; }
+            set
+            {
+                if (value.Length < 2 && value.Length > 10)
+                {
+                    Console.WriteLine("The text needs to be between 2 - 10. ");
+                }
+                else
+                {
+                    _firstName = value;
+                }
+            }
+                
         }
         public string LastName 
         {
-            get { return _lastName;} 
-            set { _lastName = "Melik"; } 
+            get { return _lastName; }
+            set
+            {
+                if (value.Length < 3 && value.Length > 15)
+                {
+                    Console.WriteLine("The Text needs to be more than 3 and not higher than 15. :");
+                }
+                else
+                {
+                    _lastName = value;
+                }
+            }
         }
         public int Age
         {
@@ -64,7 +85,7 @@ namespace InkapsArvPoly
 
         public override string ToString()
         {
-            return $"First Name:\n {FirstName}\n Last Name: {LastName}\n Age: {Age}\n Height: {Height}\n Weight: {Weight}\n";
+            return $" First Name: {FirstName}\n Last Name: {LastName}\n Age: {Age} years old\n Height: {Height} cm\n Weight: {Weight} kg\n";
         }
     }
 }

@@ -10,11 +10,12 @@
             //Console.WriteLine(person.ToString());
             //Console.WriteLine(person1.ToString());
             Person CreatePerson = new Person("Jimmy", "Melik", 28, 185.5, 85);
+            List<UserError> userErrors = new List<UserError>();
         }
 
         public void TryCatchMethod()
         {
-            try
-        }
+            // ToDo try/CatchMethod
+        
     }
 }

@@ -26,17 +26,19 @@ namespace InkapsArvPoly
 
         public string FirstName
         {
-            get { return _firstName;  }
+            get { return _firstName; }
             set
             {
                 if (value.Length < 2 && value.Length > 10)
                 {
-                    Console.WriteLine("The text needs to be between 2 - 10. ");
+                    throw new ArgumentException("The text needs to be between 2 - 10");
+                    
                 }
                 else
                 {
                     _firstName = value;
                 }
+                
             }
                 
         }
@@ -47,8 +49,8 @@ namespace InkapsArvPoly
             {
                 if (value.Length < 3 && value.Length > 15)
                 {
-                    Console.WriteLine("The Text needs to be more than 3 and not higher than 15. :");
-                    throw new ArgumentException();
+                    //Console.WriteLine("The Text needs to be more than 3 and not higher than 15. :");
+                    throw new ArgumentException("The Text needs to be more than 3 and not higher than 15. :");
                 }
                 else
                 {
@@ -67,7 +69,7 @@ namespace InkapsArvPoly
                 }
                 else
                 {
-                    Console.WriteLine("Only greater than 0! ");
+                    //Console.WriteLine("Only greater than 0! ");
                     throw new ArgumentException("Only greater than 0!");
 
                 }

@@ -30,7 +30,6 @@ namespace InkapsArvPoly
             pers.Weight = weight;
         }
 
-
         public Person CreatePerson(string firstName, string lastName, int age, double height, double weight)
         {
             Person person1 = new Person("Jimmy", "Melik", 28, 185.5, 85);

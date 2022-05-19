@@ -48,6 +48,7 @@ namespace InkapsArvPoly
                 if (value.Length < 3 && value.Length > 15)
                 {
                     Console.WriteLine("The Text needs to be more than 3 and not higher than 15. :");
+                    throw new ArgumentException();
                 }
                 else
                 {

@@ -8,9 +8,7 @@ namespace InkapsArvPoly
 {
     abstract class UserError
     {
-        public virtual string UEMessage()
-        {
-            return "Hello there!";
-        }
+        public abstract string UEMessage();
+        
     }
 }

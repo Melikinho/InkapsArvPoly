@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace InkapsArvPoly
 {
-    internal class TextInputError : UserError
+    internal class FCBMessageCopaDelRey : UserError
     {
         public override string UEMessage()
         {
-            return "You tried to use a text input in a numeric only field.This fired an error!";
-
+            return "31th times Copa Del Rel Champions! ";
         }
-
     }
 }

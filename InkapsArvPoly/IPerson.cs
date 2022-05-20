@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InkapsArvPoly
 {
-    internal interface IPerson
+    public interface IPerson
     {
         public string Talk();
     }

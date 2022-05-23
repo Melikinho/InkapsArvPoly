@@ -14,13 +14,14 @@ namespace InkapsArvPoly
             get { return HorseLikeToRun; }
             set { HorseLikeRun = value; }
         }
-        public override string DoSound()
+        public override String DoSound()
         {
             return "MEhehehhuwuuuewwwww";
         }
-        public override void Stats(string Name, int Age, double Weight)
+        public override string Stats => $"{base.Stats}";
+        public Horse(string Name, int Age, double Weight) : base(Name, Weight, Age)
         {
-            base.Stats(Name, Age, Weight);
+            return;
         }
     }
 }

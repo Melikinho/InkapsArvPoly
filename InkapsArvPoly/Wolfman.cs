@@ -8,6 +8,10 @@ namespace InkapsArvPoly
 {
     internal class Wolfman : Wolf, IPerson
     {
+        public Wolfman(string Name, int Age, double Weight) : base(Name, Age, Weight)
+        {
+        }
+
         public string Talk()
         {
             Console.WriteLine("I am a WolfMan! I can talk!!!! ");

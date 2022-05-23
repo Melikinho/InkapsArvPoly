@@ -23,9 +23,7 @@ namespace InkapsArvPoly
         {
             return;
         }
-        public override void Stats(string Name, int Age, double Weight)
-        {
-            base.Stats(Name, Age, Weight);
-        }
+
+        public override string Stats => $"{base.Stats}";
     }
 }

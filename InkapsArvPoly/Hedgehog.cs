@@ -20,9 +20,11 @@ namespace InkapsArvPoly
             return "SSSONICCCCCC!";
         }
 
-        public override void Stats(string Name, int Age, double Weight)
+        public override string Stats => $"{base.Stats}";
+
+        public Hedgehog(string Name, int Age, double Weight)
         {
-            base.Stats(Name, Age, Weight);
+            return;
         }
     }
 }

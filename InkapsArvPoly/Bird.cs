@@ -20,9 +20,11 @@ namespace InkapsArvPoly
             return "Pip pip pip pip pip";
         }
 
-        public override void Stats(string Name, int Age, double Weight)
+        public override string Stats => $"{base.Stats}";
+
+        public Bird(string Name, int Age, double Weight)
         {
-            base.Stats(Name, Age, Weight);
+            return;
         }
     }
 }

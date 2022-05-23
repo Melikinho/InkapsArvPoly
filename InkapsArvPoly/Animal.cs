@@ -23,15 +23,16 @@ namespace InkapsArvPoly
         public abstract string DoSound();
 
         //Konstruktor
-        public Animal()
+        public Animal(string Name, int Age, double Weight)
         {
-
+            Name = name;
+            Age = age;
+            Weight = weight;
         }
 
-        public virtual void Stats(string Name, int Age, double Weight)
-        {
-            return;
-        }
+        public virtual string Stats => $"Name: {Name}" +
+                $"Age: {Age}" +
+                $"Weight: {Weight}";
     }
 
 

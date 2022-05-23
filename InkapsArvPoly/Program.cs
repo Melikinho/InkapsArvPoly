@@ -16,6 +16,15 @@ namespace InkapsArvPoly
             List<Animal> AnimalList = new List<Animal>();
             List<Horse> horseList = new List<Horse>();
             List<Animal> Animals = new List<Animal>();
+            Dog dog = new Dog();
+
+            Animals.Add(new Horse("Ponny", 8, 160.3));
+            Animals.Add(new Hedgehog("Jeme", 1, 0.3));
+            Animals.Add(new Dog("Lucky", 1, 10.0));
+            Animals.Add(new Wolf("Varg", 10, 50.0));
+            Animals.Add(new Worm("Snake", 1, 2 ));
+            Animals.Add(new Bird("Fiolja", 3, 5));
+
 
             userErrors.Add(new NumericInputError());
             userErrors.Add(new TextInputError());
@@ -23,8 +32,14 @@ namespace InkapsArvPoly
             userErrors.Add(new FCBMessageLaLiga());
             userErrors.Add(new FCBMessageCopaDelRey());
 
-            var horse = new Horse();
-            var dog = new Dog("Friddo", 2, 20);
+            foreach (var animal in Animals)
+            {
+                Console.WriteLine(animal.Name);
+                Console.WriteLine(animal.Age);
+                Console.WriteLine(animal.Weight);
+            }
+
+            var horse = new Horse("PonnysPappa", 15, 300);
             Console.WriteLine(dog);
             dog.DoSound();
             Console.WriteLine(dog.DoSound());
@@ -35,6 +50,7 @@ namespace InkapsArvPoly
             {
                 foreach (var error in userErrors)
                 {
+                    Animal.DoSound
                     Console.WriteLine(error.UEMessage());
                 }
             }  

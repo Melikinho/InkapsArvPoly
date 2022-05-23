@@ -14,9 +14,18 @@ namespace InkapsArvPoly
             get { return WalkingInTheForest; }
             set { WalkingInTheForest = value; }
         }
+
         public override string DoSound()
         {
             return "Voff Voff! Voff Voff!!!";
+        }
+        public Dog(string Name, int Age, double Weight)
+        {
+            return;
+        }
+        public override void Stats(string Name, int Age, double Weight)
+        {
+            base.Stats(Name, Age, Weight);
         }
     }
 }

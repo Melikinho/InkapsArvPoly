@@ -28,7 +28,10 @@ namespace InkapsArvPoly
 
         }
 
-
+        public virtual void Stats(string Name, int Age, double Weight)
+        {
+            return;
+        }
     }
 
 

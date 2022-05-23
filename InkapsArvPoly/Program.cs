@@ -15,6 +15,7 @@ namespace InkapsArvPoly
             List<UserError> userErrors = new List<UserError>();
             List<Animal> AnimalList = new List<Animal>();
             List<Horse> horseList = new List<Horse>();
+            List<Animal> Animals = new List<Animal>();
 
             userErrors.Add(new NumericInputError());
             userErrors.Add(new TextInputError());
@@ -23,7 +24,8 @@ namespace InkapsArvPoly
             userErrors.Add(new FCBMessageCopaDelRey());
 
             var horse = new Horse();
-            var dog = new Dog();
+            var dog = new Dog("Friddo", 2, 20);
+            Console.WriteLine(dog);
             dog.DoSound();
             Console.WriteLine(dog.DoSound());
             horse.DoSound();

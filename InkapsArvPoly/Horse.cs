@@ -18,7 +18,9 @@ namespace InkapsArvPoly
         {
             return "MEhehehhuwuuuewwwww";
         }
-
-
+        public override void Stats(string Name, int Age, double Weight)
+        {
+            base.Stats(Name, Age, Weight);
+        }
     }
 }

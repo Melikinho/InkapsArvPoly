@@ -8,21 +8,20 @@ namespace InkapsArvPoly
 {
     internal class Worm : Animal
     {
-        bool isPoisonious = true;
-        public bool Poisonious
+        public bool IsPoisonious
         {
-            get { return isPoisonious; }
-            set { isPoisonious = value; }
+            get;
+            set;
         }
         public override void DoSound()
         {
             Console.WriteLine("Psssssttttt");
         }
 
-        public override string Stats() => $"{base.Stats}";
-        public Worm(String Name, int Age, double Weight) : base(Name, Age, Weight)
+        public override string Stats() => $"{base.Stats()} Is Poisonious: {IsPoisonious}";
+        public Worm(String Name, int Age, double Weight, bool isPoisonious) : base(Name, Age, Weight)
         {
-            isPoisonious = isPoisonious;
+            IsPoisonious = isPoisonious;
         }
     }
 }

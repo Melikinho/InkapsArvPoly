@@ -9,22 +9,22 @@ namespace InkapsArvPoly
     internal class Wolf : Animal
     {
         public string MyWolf;
-
-        bool WolfLikesChicken = true;
-        public bool WolfEatsChicken
+        public bool WolfLikesChicken
         {
-            get { return WolfLikesChicken; }
+            get;
+            set;
         }
         public override void DoSound()
         {
             Console.WriteLine("Aoouuuuuwwwwwwwww!!! ");
         }
 
-        public override string Stats() => $"{base.Stats}";
+        public override string Stats() => $"{base.Stats()} Likes Chicken: {WolfLikesChicken}";
 
-        public Wolf(string Name, int Age, double Weight) : base(Name, Age, Weight)
+        public Wolf(string Name, int Age, double Weight, bool wolfLiksChicken) : base(Name, Age, Weight)
         {
-            return;
+            WolfLikesChicken = wolfLiksChicken;
+
         }
     }
 }

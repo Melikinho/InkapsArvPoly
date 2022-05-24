@@ -8,7 +8,7 @@ namespace InkapsArvPoly
 {
     internal class Wolfman : Wolf, IPerson
     {
-        public Wolfman(string Name, int Age, double Weight) : base(Name, Age, Weight)
+        public Wolfman(string Name, int Age, double Weight, bool wolfLikesChicken) : base(Name, Age, Weight, wolfLikesChicken)
         {
         }
 

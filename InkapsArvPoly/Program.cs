@@ -36,11 +36,11 @@ namespace InkapsArvPoly
 
 
 
-                userErrors.Add(new NumericInputError());
-                userErrors.Add(new TextInputError());
-                userErrors.Add(new FCBMessageUefa());
-                userErrors.Add(new FCBMessageLaLiga());
-                userErrors.Add(new FCBMessageCopaDelRey());
+                //userErrors.Add(new NumericInputError());
+                //userErrors.Add(new TextInputError());
+                //userErrors.Add(new FCBMessageUefa());
+                //userErrors.Add(new FCBMessageLaLiga());
+                //userErrors.Add(new FCBMessageCopaDelRey());
 
                 foreach (var animal in Animals)
 
@@ -63,6 +63,18 @@ namespace InkapsArvPoly
                         new Worm("Snake", 1, 0.2, false)
                     };
 
+                    foreach (var animal in animalList)
+                    {
+                        Console.WriteLine(animal.Stats);
+
+                        animal.DoSound();
+
+                        if (animal is IPerson)
+                        {
+                            ((IPerson)animal).Talk();
+                        }
+                    }
+                    Console.WriteLine();
 
 
                     var horse = new Horse("PonnysPappa", 15, 300, true);
@@ -86,14 +98,15 @@ namespace InkapsArvPoly
                  };
                     }
 
+                    static void Bird()
                     {
+                        var birdList = new List<Bird>()
+                        {
+                            new Bird("Fågel", 12, 3, true)
+                    };
                     }
-
-
-
                 }
             }
         }
     }
 }
-

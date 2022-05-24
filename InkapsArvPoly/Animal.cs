@@ -30,7 +30,7 @@ namespace InkapsArvPoly
             Weight = weight;
         }
 
-        public virtual string Stats() => $"Name: {Name}" +
+        public virtual string Stats() => $"Name: {GetType().Name}" +
                 $"Age: {Age}" +
                 $"Weight: {Weight}";
     }

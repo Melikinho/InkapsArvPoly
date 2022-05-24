@@ -15,15 +15,16 @@ namespace InkapsArvPoly
             set { WalkingInTheForest = value; }
         }
 
-        public override string DoSound()
+        public override void DoSound()
         {
-            return "Voff Voff! Voff Voff!!!";
-        }
-        public Dog(string Name, int Age, double Weight)
-        {
-            return;
+            Console.WriteLine("Voff Voff! Voff Voff!!!");
         }
 
-        public override string Stats => $"{base.Stats}";
+        public Dog(string Name, int Age, double Weight) : base(Name,Age,Weight)
+        {
+            DogLikesToWalkInTheForest = DogLikesToWalkInTheForest;
+        }
+
+        public override string Stats() => $"{base.Stats}";
     }
 }

@@ -8,17 +8,14 @@ namespace InkapsArvPoly
 {
     internal class Flamingo : Bird
     {
-        bool FlamingoIsAGoodSwimmer = false;
 
-        public Flamingo(string Name, int Age, double Weight) : base(Name, Age, Weight)
+
+        public Flamingo(string Name, int Age, double Weight, bool FlamingoIsAGoodSwimmer = false) : base(Name, Age, Weight)
         {
+            return;
         }
 
-        public bool FlamingoSimming
-        {
-            get { return FlamingoIsAGoodSwimmer;  }
-            set { FlamingoIsAGoodSwimmer = value; }  
-        }
+        public bool FlamingoIsAGoodSwimmer { get; set; }
 
     }
 }

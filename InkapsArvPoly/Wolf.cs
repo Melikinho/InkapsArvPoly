@@ -14,16 +14,15 @@ namespace InkapsArvPoly
         public bool WolfEatsChicken
         {
             get { return WolfLikesChicken; }
-            set { WolfEatsChicken = value; }
         }
-        public override string DoSound()
+        public override void DoSound()
         {
-            return "Aoouuuuuwwwwwwwww!!! ";
+            Console.WriteLine("Aoouuuuuwwwwwwwww!!! ");
         }
 
-        public override string Stats => $"{base.Stats}";
+        public override string Stats() => $"{base.Stats}";
 
-        public Wolf(string Name, int Age, double Weight)
+        public Wolf(string Name, int Age, double Weight) : base(Name, Age, Weight)
         {
             return;
         }

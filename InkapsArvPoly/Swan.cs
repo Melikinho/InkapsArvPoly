@@ -8,17 +8,19 @@ namespace InkapsArvPoly
 {
     internal class Swan : Bird
     {
-        bool IsAggresive = true;
-
-        public Swan(string Name, int Age, double Weight) : base(Name, Age, Weight)
+        public bool IsAggressive
         {
+            get;
+            set;
         }
 
-        public bool Aggressive
+        public Swan(string Name, int Age, double Weight, bool IsAggressive) : base(Name, Age, Weight)
         {
-            get { return IsAggresive; }
-            set { IsAggresive = value; }
+            return;
+
         }
+
+
 
     }
 }

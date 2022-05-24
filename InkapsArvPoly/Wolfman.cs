@@ -12,7 +12,7 @@ namespace InkapsArvPoly
         {
         }
 
-        public string Talk()
+        public void Talk()
         {
             Console.WriteLine("I am a WolfMan! I can talk!!!! ");
             throw new NotImplementedException();

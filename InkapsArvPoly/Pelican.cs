@@ -12,6 +12,7 @@ namespace InkapsArvPoly
 
         public Pelican(string Name, int Age, double Weight) : base(Name, Age, Weight)
         {
+            string waterFish = WaterFish;
         }
 
         public string WaterFish

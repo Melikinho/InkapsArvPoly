@@ -15,16 +15,17 @@ namespace InkapsArvPoly
             get { return NrOfSpikes; }
             set { NrOfSpikes = value; }
         }
-        public override string DoSound()
-        {
-            return "SSSONICCCCCC!";
-        }
 
-        public override string Stats => $"{base.Stats}";
-
-        public Hedgehog(string Name, int Age, double Weight)
+        public Hedgehog(string Name, int Age, double Weight) : base(Name, Age, Weight)
         {
-            return;
+            NrOfSpikes = TotalNumOfSpikes;
         }
+        public override void DoSound()
+        {
+            Console.WriteLine("SONICCCCC! ");
+        }
+        public override string Stats() => $"{base.Stats}" + " Spikes: {TotalNumOfSpikes}";
+
+
     }
 }

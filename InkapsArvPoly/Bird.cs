@@ -15,16 +15,16 @@ namespace InkapsArvPoly
             set { iCanFly = value; }
         }
 
-        public override string DoSound()
+        public override void DoSound()
         {
-            return "Pip pip pip pip pip";
+            Console.WriteLine("Pip pip pip pip pip");
         }
 
-        public override string Stats => $"{base.Stats}";
+        public override string Stats() => $"{base.Stats}";
 
-        public Bird(string Name, int Age, double Weight)
+        public Bird(string Name, int Age, double Weight) : base(Name, Age, Weight)
         {
-            return;
+            iCanFly = flyingBird;
         }
     }
 }

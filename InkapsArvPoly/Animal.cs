@@ -20,7 +20,7 @@ namespace InkapsArvPoly
         public double Weight { get { return weight; } set { weight = value; } }
 
         //Metod som gör ljud
-        public abstract string DoSound();
+        public abstract void DoSound();
 
         //Konstruktor
         public Animal(string Name, int Age, double Weight)
@@ -30,7 +30,7 @@ namespace InkapsArvPoly
             Weight = weight;
         }
 
-        public virtual string Stats => $"Name: {Name}" +
+        public virtual string Stats() => $"Name: {Name}" +
                 $"Age: {Age}" +
                 $"Weight: {Weight}";
     }

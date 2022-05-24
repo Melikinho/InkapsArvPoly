@@ -16,13 +16,13 @@ namespace InkapsArvPoly
             List<Animal> AnimalList = new List<Animal>();
             List<Horse> horseList = new List<Horse>();
             List<Animal> Animals = new List<Animal>();
-            Dog dog = new Dog();
+            Dog dog = new Dog("Hej", 2, 20);
 
             Animals.Add(new Horse("Ponny", 8, 160.3));
             Animals.Add(new Hedgehog("Jeme", 1, 0.3));
             Animals.Add(new Dog("Lucky", 1, 10.0));
             Animals.Add(new Wolf("Varg", 10, 50.0));
-            Animals.Add(new Worm("Snake", 1, 2 ));
+            Animals.Add(new Worm("Snake", 1, 2));
             Animals.Add(new Bird("Fiolja", 3, 5));
 
 
@@ -33,26 +33,36 @@ namespace InkapsArvPoly
             userErrors.Add(new FCBMessageCopaDelRey());
 
             foreach (var animal in Animals)
+
             {
-                Console.WriteLine(animal.Name);
-                Console.WriteLine(animal.Age);
-                Console.WriteLine(animal.Weight);
+                Console.WriteLine(animal.Stats());
+                animal.DoSound();
+
             }
 
             var horse = new Horse("PonnysPappa", 15, 300);
             Console.WriteLine(dog);
             dog.DoSound();
-            Console.WriteLine(dog.DoSound());
             horse.DoSound();
-            Console.WriteLine(horse.DoSound());
 
+            static void WolfMan()
+            {
+                var wolfMan = new Wolfman("Wolfman", 50, 82);
+                wolfMan.Talk();
+                wolfMan.DoSound();
+            }
+            
+            
+            static void Doggy()
+            {
+                var dogList = new List<Dog>()
+                {
+                    new Dog("Buster", 5, 10),
+                    new Dog("Lucky", 10, 20)
+                 };
+            }
 
             {
-                foreach (var error in userErrors)
-                {
-                    Animal.DoSound
-                    Console.WriteLine(error.UEMessage());
-                }
             }  
 
 

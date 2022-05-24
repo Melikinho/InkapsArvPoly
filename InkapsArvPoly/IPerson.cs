@@ -8,6 +8,6 @@ namespace InkapsArvPoly
 {
     public interface IPerson
     {
-        public string Talk();
+        void Talk();
     }
 }

@@ -14,14 +14,15 @@ namespace InkapsArvPoly
             get { return isPoisonious; }
             set { isPoisonious = value; }
         }
-        public override string DoSound()
+        public override void DoSound()
         {
-            return "pssssssssssss";
+            Console.WriteLine("Psssssttttt");
         }
-        public override string Stats => $"{base.Stats}";
-        public Worm(String Name, int Age, double Weight)
+
+        public override string Stats() => $"{base.Stats}";
+        public Worm(String Name, int Age, double Weight) : base(Name, Age, Weight)
         {
-            return;
+            isPoisonious = isPoisonious;
         }
     }
 }

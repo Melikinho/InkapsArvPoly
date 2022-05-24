@@ -8,16 +8,17 @@ namespace InkapsArvPoly
 {
     internal class Swan : Bird
     {
+
+
+        public Swan(string Name, int Age, double Weight, bool IsAggressive) : base(Name, Age, Weight, IsAggressive)
+        {
+            return;
+
+        }
         public bool IsAggressive
         {
             get;
             set;
-        }
-
-        public Swan(string Name, int Age, double Weight, bool IsAggressive) : base(Name, Age, Weight)
-        {
-            return;
-
         }
 
 

@@ -10,6 +10,7 @@ namespace InkapsArvPoly
     {
         public Wolfman(string Name, int Age, double Weight, bool wolfLikesChicken) : base(Name, Age, Weight, wolfLikesChicken)
         {
+
         }
 
         public void Talk()

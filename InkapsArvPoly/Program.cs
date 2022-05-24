@@ -50,39 +50,50 @@ namespace InkapsArvPoly
 
                 }
 
-                var horse = new Horse("PonnysPappa", 15, 300, true);
-                horse.DoSound();
-
-                static void WolfMan()
+                static void djurLista()
                 {
-                    var wolfMan = new Wolfman("Wolfman", 50, 82, true);
-                    wolfMan.Talk();
-                    wolfMan.DoSound();
-                }
+                    var animalList = new List<Animal>()
+                    {
+                        new Hedgehog("SuperSonic", 2, 0.5, 28),
+                        new Dog("LuckyStrike", 5, 50),
+                        new Flamingo("MyNameIsFlamingo", 12, 1.78, false),
+                        new Pelican("MyNameIsPelican", 20, 2.89, true),
+                        new Wolfman("MY NAME IS WOLFMAN", 62, 90, true),
+                        new Horse("Ponny", 22, 350, true),
+                        new Worm("Snake", 1, 0.2, false)
+                    };
 
 
-                static void Doggy()
-                {
-                    var dogList = new List<Dog>()
+
+                    var horse = new Horse("PonnysPappa", 15, 300, true);
+                    horse.DoSound();
+
+                    static void WolfMan()
+                    {
+                        var wolfMan = new Wolfman("Wolfman", 50, 82, true);
+                        wolfMan.Talk();
+                        wolfMan.DoSound();
+                    }
+
+
+                    static void Doggy()
+                    {
+                        var dogList = new List<Dog>()
                 {
                     new Dog("Buster", 5, 10),
                     new Dog("Lucky", 10, 20)
 
                  };
+                    }
+
+                    {
+                    }
+
+
+
                 }
-
-                {
-                }
-
-
-
             }
         }
     }
 }
-//public void TryCatchMethod()
-//{
-//    // ToDo try/CatchMethod        
-//}
-//                 } }
 

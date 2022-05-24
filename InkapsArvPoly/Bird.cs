@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InkapsArvPoly
+﻿namespace InkapsArvPoly
 {
     internal class Bird : Animal
     {
-        bool iCanFly = true;
-        bool flyingBird
+        bool FlyingBird
         {
-            get { return iCanFly; }
-            set { iCanFly = value; }
+            get;
+            set;
         }
 
         public override void DoSound()
@@ -20,11 +13,11 @@ namespace InkapsArvPoly
             Console.WriteLine("Pip pip pip pip pip");
         }
 
-        public override string Stats() => $"{base.Stats}";
+        public override string Stats() => $"{base.Stats()} Bird can fly: {FlyingBird}";
 
-        public Bird(string Name, int Age, double Weight) : base(Name, Age, Weight)
+        public Bird(string Name, int Age, double Weight, bool flyingBird) : base(Name, Age, Weight)
         {
-            iCanFly = flyingBird;
+            FlyingBird = flyingBird;
         }
     }
 }

@@ -8,20 +8,15 @@ namespace InkapsArvPoly
 {
     internal class Horse : Animal
     {
-        bool HorseLikeToRun = true;
-        public bool HorseLikeRun
-        {
-            get { return HorseLikeToRun; }
-            set { HorseLikeRun = value; }
-        }
+        public bool HorseLikeToRun { get; set; }
         public override void DoSound()
         {
             Console.WriteLine("MEhehehhuwuuuewwwww");
         }
-        public override string Stats() => $"{base.Stats}";
-        public Horse(string Name, int Age, double Weight) : base(Name, Age, Weight)
+        public override string Stats() => $"{base.Stats()} Horse likes to Run: {HorseLikeToRun}";
+        public Horse(string Name, int Age, double Weight, bool horseLikeToRun) : base(Name, Age, Weight)
         {
-            return;
+            HorseLikeToRun = horseLikeToRun;
         }
     }
 }

@@ -8,24 +8,17 @@ namespace InkapsArvPoly
 {
     internal class Hedgehog : Animal
     {
-        public int NrOfSpikes;
 
-        public int TotalNumOfSpikes
-        {
-            get { return NrOfSpikes; }
-            set { NrOfSpikes = value; }
-        }
+        public int NrOfSpikes { get; set; }
 
-        public Hedgehog(string Name, int Age, double Weight) : base(Name, Age, Weight)
+        public Hedgehog(string Name, int Age, double Weight, int nrOfSpikes) : base(Name, Age, Weight)
         {
-            NrOfSpikes = TotalNumOfSpikes;
+            NrOfSpikes = nrOfSpikes;
         }
         public override void DoSound()
         {
             Console.WriteLine("SONICCCCC! ");
         }
-        public override string Stats() => $"{base.Stats}" + " Spikes: {TotalNumOfSpikes}";
-
-
+        public override string Stats() => $"{base.Stats()}  pikes: {NrOfSpikes}";
     }
 }

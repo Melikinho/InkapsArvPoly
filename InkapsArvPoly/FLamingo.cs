@@ -10,9 +10,9 @@ namespace InkapsArvPoly
     {
 
 
-        public Flamingo(string Name, int Age, double Weight, bool FlamingoIsAGoodSwimmer = false) : base(Name, Age, Weight)
+        public Flamingo(string Name, int Age, double Weight, bool FlamingoIsAGoodSwimmer) : base(Name, Age, Weight, FlamingoIsAGoodSwimmer)
         {
-            return;
+
         }
 
         public bool FlamingoIsAGoodSwimmer { get; set; }

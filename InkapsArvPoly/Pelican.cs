@@ -8,17 +8,16 @@ namespace InkapsArvPoly
 {
     internal class Pelican : Bird
     {
-        bool EatsWaterFish = true;
 
-        public Pelican(string Name, int Age, double Weight) : base(Name, Age, Weight)
+        public Pelican(string Name, int Age, double Weight, bool waterFish) : base(Name, Age, Weight, waterFish)
         {
-            string waterFish = WaterFish;
+            WaterFish = waterFish;
         }
 
-        public string WaterFish
+        public bool WaterFish
         {
-            get { return WaterFish; }
-            set { WaterFish = value; }
+            get;
+            set;
         }
 
     }

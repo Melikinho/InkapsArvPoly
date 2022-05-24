@@ -18,12 +18,12 @@ namespace InkapsArvPoly
             List<Animal> Animals = new List<Animal>();
             Dog dog = new Dog("Hej", 2, 20);
 
-            Animals.Add(new Horse("Ponny", 8, 160.3));
-            Animals.Add(new Hedgehog("Jeme", 1, 0.3));
+            Animals.Add(new Horse("Ponny", 8, 160.3, true));
+            Animals.Add(new Hedgehog("Jeme", 1, 0.3, 55));
             Animals.Add(new Dog("Lucky", 1, 10.0));
-            Animals.Add(new Wolf("Varg", 10, 50.0));
-            Animals.Add(new Worm("Snake", 1, 2));
-            Animals.Add(new Bird("Fiolja", 3, 5));
+            Animals.Add(new Wolf("Varg", 10, 50.0, true));
+            Animals.Add(new Worm("Snake", 1, 2, false));
+            Animals.Add(new Bird("Fiolja", 3, 5, true));
 
 
             userErrors.Add(new NumericInputError());
@@ -40,14 +40,14 @@ namespace InkapsArvPoly
 
             }
 
-            var horse = new Horse("PonnysPappa", 15, 300);
+            var horse = new Horse("PonnysPappa", 15, 300, true);
             Console.WriteLine(dog);
             dog.DoSound();
             horse.DoSound();
 
             static void WolfMan()
             {
-                var wolfMan = new Wolfman("Wolfman", 50, 82);
+                var wolfMan = new Wolfman("Wolfman", 50, 82, true);
                 wolfMan.Talk();
                 wolfMan.DoSound();
             }

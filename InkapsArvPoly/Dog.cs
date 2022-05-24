@@ -22,7 +22,7 @@ namespace InkapsArvPoly
 
         public Dog(string Name, int Age, double Weight) : base(Name,Age,Weight)
         {
-            DogLikesToWalkInTheForest = DogLikesToWalkInTheForest;
+
         }
 
         public override string Stats() => $"{base.Stats}";
